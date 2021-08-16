@@ -1,0 +1,226 @@
+/* Обнуление */
+*{padding: 0; margin: 0; border: 0;}
+*, *:before, *:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus, :active{outline: none;}
+a:active,a:focus{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height: 100%; width: 100%; font-size: 100%; line-height: 1; font-size: 14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: inherit;}
+/*-----------------------*/
+
+
+body{
+	font-family: 'Nunito', sans-serif;
+	background: url(img/background.jpg) no-repeat;
+	background-size: 100%;
+	background-position: center;
+	background-position: top;
+}
+
+.container{
+	margin:  0 150px ;
+}
+
+
+.header{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	padding: 10px 0;
+	background-color: rgba(255,255,255,0.89);
+	border: 1px solid #000;
+	
+}
+.header__row{
+	display: flex;
+	justify-content: space-between;
+}
+.header__logo{
+	display: flex;
+}
+.header__trans{
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	color: #1350bf;
+	text-shadow: 2.2px 1px #81b3fc;
+}
+.header__mister{
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	color: rgb(22,22,22);
+	text-shadow: 2.2px 1px rgb(100,100,100);
+	padding-right: 15px;
+	border-right: 1px solid #000;
+}
+.header__repair{
+	padding: 3px 15px 0 15px;
+	font-size: 11px;
+	border-right: 1px solid #000;
+}
+
+
+
+
+.header__menu{}
+.menu{
+	font-size: 13.5px;
+	padding-top: 3px;
+}
+.menu__item{
+	padding: 0 2.5px;
+	color: #000;
+	transition-property: border-bottom, color;
+	transition-duration: 0.5s, 0.5s;
+	font-weight: 700;
+}
+.menu__item:hover{
+	border-bottom: 1px solid #000;
+	color: rgb(100,100,100);
+}
+.menu__img-search{
+	padding-top: 2px;
+	max-width: 18px;
+	max-height: 18px;
+}
+.menu__img-1{
+	margin: 0 1px;
+	max-width: 16px;
+	max-height: 16px;
+}
+.menu__img-2{
+	margin: 0 1px;
+	max-width: 16px;
+	max-height: 16px;
+}
+.menu__img-3{
+	margin: 0 1px;
+	max-width: 16px;
+	max-height: 16px;
+}
+
+
+
+
+.main{}
+.title{
+	padding: 10px 0;
+	margin-top: 100px;
+	background-color: rgba(255, 255 ,255 , 0.7);
+}
+.title__row{
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+	color: rgba(0, 0 ,255, 0.9);
+
+}
+.title__column-1{
+	font-size: 32px;
+	font-weight: 400;
+	text-shadow: 2.2px 1px #81b3fc;
+}
+.title__column-2{
+	font-size: 32px;
+	font-weight: 400;
+	text-shadow: 2.2px 1px #81b3fc;
+}
+.title__column-3{
+	font-size: 42px;
+	font-weight: 700;
+	text-shadow: 2.4px 1.2px #fff;
+}
+
+
+
+
+.appointment{}
+.appointment__row{
+	top: 0px;
+	display: inline-block;
+	max-width: 100%;
+	text-decoration: none;
+
+	transition-duration: 0.1s, 0.11s;
+	transition-property: top, box-shadow;
+
+	margin: 24px 0;
+	padding: 10px 30px;
+	background-color: rgba(0, 0 ,255, 1);
+	box-shadow: 2px 3px 0 #fff;
+	border-radius: 2px;
+	border: 1.5px solid #fff;
+}
+.appointment__row:hover{
+	top: 1px;
+	box-shadow: 1px 2px 0 #fff;
+}
+.appointment__button{
+	color: #fff;
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+
+.columns{}
+.columns__row{
+	display: flex;
+	justify-content: space-between;
+}
+.columns__item{
+	margin-top: 25px;
+}
+.item{
+	background-color: rgba(0, 0 ,255, 1);
+	color: #fff;
+	font-size: 13px;
+	border: 3.5px solid #fff;
+	border-radius: 4px;
+	box-shadow: 3px 3px #fff;
+}
+.item__img{
+	padding: 10px 85px 70px 8px;
+}
+.column__img{
+	max-height: 36px;
+	max-width: 36px;
+}
+.item__head{
+	text-transform: uppercase;
+	padding: 10px 15px 5px 15px;
+	font-weight: 700;
+}
+.item__text{
+	text-transform: uppercase;
+	padding: 0 15px 25px 15px;
+	font-weight: 400;
+}
+
+
+
+
+
+
+.footer{
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	padding: 20px 0 20px 0;
+	background-color: rgba(200,200,200, 0.15);
+}
+.footer__text{
+
+}
+
